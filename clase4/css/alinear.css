@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body{
+    background-color:#C382AF;
+    color: #f3e3e2; 
+    font-family: "Open Sans", sans-serif;
+}
+
+section{
+    background-color: red;
+    height: 300px;
+    width: 648px;
+    margin: auto; /*centrar seccion*/
+}
+    section img{
+        vertical-align: middle;
+    }
+
+#segundo{
+    margin-top: 64px;
+    display: flex; 
+    /*alinear elementos en el eje vertical*/
+    align-items: center;
+
+    /*alinear elementos en el eje horizontal*/
+    justify-content: space-between;
+}

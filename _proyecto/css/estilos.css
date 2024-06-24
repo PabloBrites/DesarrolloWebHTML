@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color:#202630; /*color de texto*/
+    font-family: "Figtree", sans-serif; /* tipografia*/
+}
+
+header{
+    background-color: #5B86E5;
+}
+
+    /*las dimensiones y el color de fondo, eso es siempre lo primero que hay que configurar  
+    cuando vamos a armar un contenedor*/
+
+    header div{ /*el div que esta dentro de header*/
+        width: 1100px; /*ancho*/
+        height: 104px; /*altura*/
+        margin: auto; /*centrar una caja*/
+    
+        display:flex; /* estas dos siempre van juntas/*te da flexibilidad para organizar, alinear y distribuir elementos*/
+        justify-content: space-between; /*agarra el espacio sobrante y lo va a poner entre las imagenes*/
+        align-items: center; /*centrar en horizontal*/
+    
+    }
+
+    header a{
+        color: #fff;
+        text-decoration: none; /*esto quita el subrayado de los textos*/
+        font-size: 20px; /*agranda el tamaño del texto*/
+        margin: 8px; /*la separacion entre las letras*/
+    }
+
+/*hero banner*/
+#hero{
+    height: 680px;
+    /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=37d2dc&c2=5b86e5&gt=l&gd=dbb
+    */
+    background: #37D2DC;
+    background: linear-gradient(0deg, #37D2DC, #5B86E5);
+
+}
+
+#hero div{
+    width: 1100px;
+    height: 680px;
+    margin:auto; /*sirve para centrar una caja*/
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+    #hero div article{
+        color: #fff;
+    }
+        #hero div article h1{
+            font-weight: 400;
+            font-size: 24px; /*tamaño de texto*/
+            margin-bottom: 40px;
+        }
+        #hero div article h2{
+            font-size: 40px;
+            width: 478px;
+        }
+
+/*main*/
+main{
+    min-height: 500px;
+}
+
+/*seccion servicios*/
+#servicios{
+    width: 1100px;
+    height: 414px;
+    margin:auto;
+    margin-top: 72px;
+    /*background-color:#cfeff264;*/
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 24px; /*Permite agregar espacio alrededor del contenido dentro de un elemento*/
+    justify-content: space-between;
+
+}
+
+#servicios h2{
+    width: 100%;
+    text-align: center;
+    font-weight:400; /*espesor de la letra*/
+    margin-bottom:32px;
+}
+#servicios article{
+    width: 336px;
+    height: 288px;
+    padding: 24px 32px;
+    font-weight: 300;
+    color: #07B2FF;
+    border: 2px solid #07B2FF;
+    border-radius: 8px;
+}
+    #servicios article h3{
+        font-weight: 300;
+        margin-top: 24px;  /*separacion hacia arriba*/
+        margin-bottom: 16px; /*separacion hacia abajo*/
+    }
+    #servicios article p{
+        margin-bottom: 8px;
+    }
+    #servicios article a{
+        text-decoration: none;
+        color: #07B2FF;
+    }
+/*seccion portfolio*/
+#portfolio{
+    width: 1100px;
+    margin: 72px auto 0px auto;
+    padding: 32px 0px;
+    display: flex;
+    flex-wrap: wrap; /* respeta los anchos de los elementos contenidos*/
+    justify-content: space-between;
+}
+    #portfolio h2{
+        width: 100%;
+        font-weight: 400;
+        text-align: center;
+    }
+    #portfolio article{
+        width: 340px;
+        height: 340px;
+        margin-top: 32px;
+        
+         
+    }
+    #portfolio-1{
+        background-image: url(../imgs/portfolio1/portfolio-1.png) ;
+    }
+    #portfolio-2{
+        background-image: url(../imgs/portfolio1/portfolio-2.png) ;
+    }
+    #portfolio-3{
+        background-image: url(../imgs/portfolio1/portfolio-3.png) ;
+    }
+    #portfolio-4{
+        background-image: url(../imgs/portfolio1/portfolio-4.png) ;
+    }
+    #portfolio-5{
+        background-image: url(../imgs/portfolio1/portfolio-5.png) ;
+    }
+    #portfolio-6{
+        background-image: url(../imgs/portfolio1/portfolio-6.png) ;
+    }
+    #portfolio article a{
+        width: 288px;
+        height: 72px;
+        margin:auto;
+        margin-top: 252px;
+        padding: 8px 0px 8px 16px;
+        display: block;
+        background-color: #fff;
+        border-right: 32px solid #07B2FF;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #07B2FF;   
+    }
+        #portfolio article span{
+            color: #0B1E46;
+            font-size: 24px;
+            font-weight:600;
+            display: block;
+            margin-top: 8px;
+
+        }
+/*seccion contacto */       
+#contacto{
+    width: 648px;
+    height: 464px;
+    background-color: #CCEFFF;
+    margin: 72px auto 0px auto;
+    padding: 44px 84px;
+    border-radius: 16px;
+}
+    #contacto form input,
+    #contacto form textarea
+    {
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+        border-left: 12px solid#07B2FF;
+        padding: 10px 20px;
+        color:#202630; /*color de texto*/
+        font-family: "Figtree", sans-serif; /* tipografia*/
+        margin-bottom: 32px;
+        font-size: 16px;
+        box-shadow: 0px 4px 4px hsla(0, 0%, 55%, 25%);     
+    }
+    #contacto form textarea{
+        height: 160px; 
+        resize: none;
+    }
+
+    #contacto form button{
+        font-family: "Figtree", sans-serif;
+        font-size: 16px;
+        color: #fff;
+        background-color: #07B2FF;
+        width: 160px;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0px 4px 4px hsla(0, 0%, 55%, 25%);
+        transition: 500ms;
+    }
+    #contacto form button:hover{
+        background-color: hsl(199, 100%, 62%);
+    }
+
+    #contacto form input::placeholder
+    #contacto form textarea::placeholder
+    {
+        color:#202630; /*color de texto*/
+        font-family: "Figtree", sans-serif; /* tipografia*/
+        font-size: 16px;
+
+    }
+
+/*footer*/
+footer{
+    margin-top: 72px;
+    background-color:#0B1E46 ;
+}
+    footer div{
+        height: 216px;
+        width: 1100px;
+        margin: auto;
+        display: flex; /*te da flexibilidad para organizar, alinear y distribuir elementos*/
+        justify-content: space-between; /*separacion entre las imagenes*/
+        align-items: center; /*las centra*/
+        
+    }
+    #logofooter{
+        width: 92px;
+    }
+footer div nav a{
+    margin: 16px;
+}

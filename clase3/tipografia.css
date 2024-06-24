@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* https://fonts.google.com/ */
+
+body{
+    background-color: black; /* color de fondo de toda la pagina */
+    color: hsl(156, 50%, 80%); /* color de la letra */
+    font-family: "Dancing Script", cursive; /*  que tipografia vas a usar? */
+    font-size: 35px; /* tamaño letra*/
+}
+

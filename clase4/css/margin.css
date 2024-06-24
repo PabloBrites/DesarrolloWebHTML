@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body{
+    background-color:#C382AF;
+    color: #f3e3e2; 
+    font-family: "Open Sans", sans-serif;
+}
+
+section{
+    background-color: red;
+    height: 300px;
+    width: 648px;
+    margin: auto;
+}
+    article{
+        background-color:#f3e3e2;
+        height: 64px;
+        width: 64px;
+        margin: 16px; /*separaracion entre elementos*/ 
+    }
+    #rosa{ /*un elemento en el html que tiene el ID "rosa" */
+        background-color:rgb(89, 13, 25);
+        margin-left: 80px; /*separamos el articulo*/
+    }
+    #verde{
+        background-color:green;
+        /* centrar en horizontal un contenedor*/
+        margin: auto; /* margin auto es para centrar la caja*/
+    }
+    #calicomegordas{
+        background-color: chocolate;
+        margin-left: 500px
+    }
